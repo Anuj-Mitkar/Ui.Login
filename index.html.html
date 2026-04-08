@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in-Google Accounts</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+            font-family: "Google Sans", roboto, "Noto Sans Myanmar UI", "Noto Sans Khmer", arial, sans-serif;
+            background-color: #f0f4f9;
+            }
+
+            * {
+                margin: 0%;
+                box-sizing: inherit;
+            }
+            .block {
+                border: white solid;
+                border-radius: 30px;
+                background-color: white;
+            }
+            .main {
+                    margin: 120px auto;
+                    max-width: 1150px;
+                    padding: 0 20px;
+                }
+            .a1 h1 {
+                font-weight: normal;
+            }
+            article {
+                margin: 30px;
+                padding: 10px;
+            }
+            .body {
+                display: flex;
+
+            }
+            .t1 input {
+                width: 100%;
+                height: 50px;
+                margin-bottom: 5px;
+            }
+            .t1 , .t2 {
+                margin-bottom: 50px;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(29,93,211);
+            }
+            .a1 h1 {
+                margin-bottom: 26px;
+            }
+            .logo {
+                margin: 40px 0px 0px 40px;
+            }
+            .t3 {
+                text-align: end;
+            }
+            .t3 a {
+                margin-right: 0px;
+            }
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                margin: 15px;
+                
+            }
+            .item2 a {
+                margin-left: 20px;
+            }
+            .t3 button {
+                background-color:#0b57d0 ;
+                color: white;
+                width: 80px;
+                height: 40px;
+                border-radius: 30px;
+            }
+            .t1 a:hover {
+                background-color: #e7eef9;
+                border-radius: 10px;
+            }
+            .t2 a:hover {
+                text-decoration: underline;
+            }
+            .t3 a:hover {
+                background-color: #e9f1fe;
+                box-sizing: content-box;
+                border-radius: 30px;
+            }
+            .t3 a {
+                padding: 10px;
+            }
+            .item2 a {
+                color: #595959;
+                padding: 6px;
+            }
+            .item2 a:hover {
+                background-color: #dee1e3fb;
+                border-radius: 10px;
+            }
+            .menu {
+                background-color: #f0f4f9;
+            }
+            .lang {
+                border: none;
+                background: transparent;
+                color: #5f6368;
+                
+            }
+            .desktop {
+                display: block;
+            }
+            .mobile {
+                display: none;
+                
+            }
+            
+            @media only screen and (max-width : 855px) {
+                .main {
+                    margin: 0%;
+                }
+                .body {
+                    flex-direction: column;
+                }
+                .desktop {
+                    display: none;
+                }
+                .mobile {
+                    display: block;
+                    text-align: center;
+                }
+                .t3 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                }
+                .logo , .a1 h1{
+                    display: flex;
+                    justify-content: center;
+                    margin-left:0;
+                }
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="block">
+                <section class="logo">
+                    <img class="desktop" src="ass-img/google-logo.png">
+                    <img class="mobile" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" width="48">
+                </section>
+                <section class="body">
+                    <article class="a1">
+                        <h1>Sign in</h1>
+                        <p>with your Google Account. This account will be available to other Google apps in the browser.</p>
+                    </article>
+                    <article class="a2">
+                        <div class="t1">
+                            <input type="text" placeholder=" Email or phone">
+                            <p><a href="">Forgot email?</a></p>
+                        </div>
+                        <div class="t2">
+                            <p>Not your computer? Use Guest mode to sign in privately.<a href="">Learn more about using Guest mode</a></p>
+                        </div>
+                        <div class="t3">
+                            <a href="">Create account</a>
+                            <a href="google-next.html">
+                                <button>Next</button>
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="menu">
+                <div class="item1">
+                    <select id="list" class="lang">
+                        <option>English (United States)</option>
+                        <option>English (United Kingdom)</option>
+                        <option>हिन्दी</option>
+                        <option>मराठी</option>
+                        <option>বাংলা</option>
+                        <option>తెలుగు</option>
+                        <option>தமிழ்</option>
+                        <option>ગુજરાતી</option>
+                        <option>ಕನ್ನಡ</option>
+                        <option>മലയാളം</option>
+                        <option>ਪੰਜਾਬੀ</option>
+                        <option>اردو</option>
+                        <option>Español</option>
+                        <option>Français</option>
+                        <option>Deutsch</option>
+                        <option>Português</option>
+                        <option>Русский</option>
+                        <option>中文（简体）</option>
+                        <option>中文（繁體）</option>
+                        <option>日本語</option>
+                        <option>한국어</option>
+                        <option>العربية</option>
+                    </select>
+                </div>
+                <div class="item2">
+                    <a href="">Help</a>
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
