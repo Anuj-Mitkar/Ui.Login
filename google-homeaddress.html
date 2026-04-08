@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Accounts</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+            font-family: "Google Sans", roboto, "Noto Sans Myanmar UI", "Noto Sans Khmer", arial, sans-serif;
+            background-color: #f0f4f9;
+            }
+
+            * {
+                margin: 0%;
+                box-sizing: inherit;
+            }
+            .block {
+                border: white solid;
+                border-radius: 30px;
+                background-color: white;
+            }
+            .main {
+                    margin: 120px auto;
+                    max-width: 1150px;
+                    padding: 0 20px;
+                }
+            .a1 h1 {
+                font-weight: normal;
+            }
+            article {
+                margin: 30px;
+                padding: 10px;
+            }
+            .body {
+                display: flex;
+
+            }
+            .t1 input {
+                width: 100%;
+                height: 50px;
+                margin-bottom: 5px;
+            }
+            .t1 {
+                margin-bottom: 100px;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(29,93,211);
+            }
+            .a1 h1 {
+                margin-bottom: 26px;
+            }
+            .logo {
+                margin: 40px 0px 0px 40px;
+            }
+            .t3 {
+                text-align: end;
+            }
+            .t3 a {
+                margin-right: 0px;
+            }
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                margin: 15px;
+                
+            }
+            .t3 button {
+                background-color:#0b57d0 ;
+                color: white;
+                width: 80px;
+                height: 40px;
+                border-radius: 30px;
+            }
+            .t1 a:hover {
+                background-color: #e7eef9;
+                border-radius: 10px;
+            }
+            .t3 a:hover {
+                background-color: #e9f1fe;
+                box-sizing: content-box;
+                border-radius: 30px;
+            }
+            .t3 a {
+                padding: 10px;
+            }
+            .menu {
+                background-color: #f0f4f9;
+            }
+            .desktop {
+                display: block;
+            }
+            .mobile {
+                display: none;
+                
+            }
+            .input-box {
+                position: relative;
+                width: 450px;
+                margin-right: 50px;
+            }
+
+            .input-box i {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: gray;
+            }
+            .input-box input {
+                width: 100%;
+                padding: 2px 15px 2px 35px; /* space for icon */
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .t1 p {
+                font-size: smaller;
+            }
+            @media only screen and (max-width : 855px) {
+                .main {
+                    margin: 0%;
+                }
+                .body {
+                    flex-direction: column;
+                }
+                .desktop {
+                    display: none;
+                }
+                .mobile {
+                    display: block;
+                    text-align: center;
+                }
+                .t3 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                }
+                .logo , .a1 h1{
+                    display: flex;
+                    justify-content: center;
+                    margin-left:0;
+                }
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="block">
+                <section class="logo">
+                    <img class="desktop" src="ass-img/google-logo.png">
+                    <img class="mobile" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" width="48">
+                </section>
+                <section class="body">
+                    <article class="a1">
+                        <h1>Set a home address</h1>
+                        <p>Your home and work addresses are used to personalize your experiences across Google products, and for ads purposes as described in Google's Privacy Policy.</p>
+                    </article>
+                    <article class="a2">
+                        <div class="t1">
+                            <div class="input-box">
+                                <i class="fa fa-home"></i>
+                                <input type="text" placeholder="Enter your home address">
+                            </div>
+                            <p>You can change or remove this any time in your Google Account settings.</p>
+                        </div>
+                        <div class="t3">
+                            <a href="https://www.google.com">Skip</a>
+                            <a href="https://www.google.com">
+                                <button>Save</button>
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
